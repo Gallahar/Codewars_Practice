@@ -26,8 +26,8 @@ function longestConsec(strarr, k) {
     if (strarr.length===0||k>strarr.length||k<=0){
         return ''
     }
-    let stringsArr = [...strarr]
-    let numbersArr = stringsArr.map(el=>el.length)
+    let stringsArr = []
+    let numbersArr = []
 
     for(let i = 0;i<strarr.length;i++){
         stringsArr.push(strarr.slice(i,i+k).join(''))
